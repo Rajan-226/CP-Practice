@@ -244,6 +244,21 @@
     ],
     "timestamp": "Dec/21/2020 16:00"
   },
+  "CF73399713": {
+    "contest_id": 677,
+    "language": "GNU C11",
+    "path": "codeforces\\677\\A.cpp",
+    "problem_index": "A",
+    "problem_name": "Vanya and Fence",
+    "problem_url": "https://codeforces.com/contest/677/problem/A",
+    "submission_id": "CF73399713",
+    "submission_url": "https://codeforces.com/contest/677/submission/73399713",
+    "tags": [
+      "implementation",
+      "*800"
+    ],
+    "timestamp": "Mar/16/2020 16:13"
+  },
   "CF73400315": {
     "contest_id": 734,
     "language": "GNU C11",
