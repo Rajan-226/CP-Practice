@@ -244,6 +244,22 @@
     ],
     "timestamp": "Dec/21/2020 16:00"
   },
+  "CF73400315": {
+    "contest_id": 734,
+    "language": "GNU C11",
+    "path": "codeforces\\734\\A.cpp",
+    "problem_index": "A",
+    "problem_name": "Anton and Danik",
+    "problem_url": "https://codeforces.com/contest/734/problem/A",
+    "submission_id": "CF73400315",
+    "submission_url": "https://codeforces.com/contest/734/submission/73400315",
+    "tags": [
+      "implementation",
+      "strings",
+      "*800"
+    ],
+    "timestamp": "Mar/16/2020 16:23"
+  },
   "CF73401380": {
     "contest_id": 112,
     "language": "GNU C11",
