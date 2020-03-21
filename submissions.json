@@ -244,6 +244,22 @@
     ],
     "timestamp": "Dec/21/2020 16:00"
   },
+  "CF73889788": {
+    "contest_id": 770,
+    "language": "GNU C++17",
+    "path": "codeforces\\770\\A.cpp",
+    "problem_index": "A",
+    "problem_name": "New Password",
+    "problem_url": "https://codeforces.com/contest/770/problem/A",
+    "submission_id": "CF73889788",
+    "submission_url": "https://codeforces.com/contest/770/submission/73889788",
+    "tags": [
+      "*special problem",
+      "implementation",
+      "*800"
+    ],
+    "timestamp": "Mar/21/2020 18:47"
+  },
   "CF73958381": {
     "contest_id": 318,
     "language": "GNU C++17",
