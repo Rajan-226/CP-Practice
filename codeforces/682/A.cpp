@@ -1,15 +1,13 @@
-#include <stdio.h>
-
-int main()
-{
-    long long int m=0,i,j,k,l;
-    scanf("%lld %lld",&i,&j);
-    for(k=1;k<=i;k++)
-    {
-        l=k%5;
-        m=m+(j+l)/5;
-    }
-    printf("%lld",m);
-
-    return 0;
+#include <bits/stdc++.h>
+using namespace std;
+int main(){
+  long long int n,m,sum=0;
+  cin>>n>>m;
+  for(int i=1;i<=n;i++){
+   int k,c;
+   c=(i+m)/5;
+   k=i/5;
+   sum+=c-k;
+  }
+  cout<<sum;
 }
