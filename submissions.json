@@ -244,6 +244,21 @@
     ],
     "timestamp": "Dec/21/2020 16:00"
   },
+  "CF75210601": {
+    "contest_id": 365,
+    "language": "GNU C++17",
+    "path": "codeforces\\365\\A.cpp",
+    "problem_index": "A",
+    "problem_name": "Good Number",
+    "problem_url": "https://codeforces.com/contest/365/problem/A",
+    "submission_id": "CF75210601",
+    "submission_url": "https://codeforces.com/contest/365/submission/75210601",
+    "tags": [
+      "implementation",
+      "*1100"
+    ],
+    "timestamp": "Apr/02/2020 12:38"
+  },
   "CF75246771": {
     "contest_id": 1331,
     "language": "GNU C++17",
