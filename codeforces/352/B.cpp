@@ -1,56 +1,49 @@
- #include <iostream>
-#include <string>
-#include <cmath>
-#include <map>
-#include <algorithm>
+#include <bits/stdc++.h>
 using namespace std;
 #define ll long long
- 
-void solve(){
-    int n; cin >> n;
-    int changes = 0;
-    map< int, pair<int, int> > m;
- 
-    for(int i = 1; i <= n; i++){
-        int temp; cin >> temp;
-        if(m[temp].first == 0 && m[temp].second == 0){
-            m[temp].first = i;
-        }
-        else{
-            int last_pos = m[temp].first;
-            if(last_pos == -1) continue;
-            m[temp].first = i;
-            if(m[temp].second == 0){
-                m[temp].second = i - last_pos;
-            }else if(i - last_pos != m[temp].second){
-                m[temp].first = -1;
-                changes++;
-            }
-        }
-    }
- 
-    if(changes == m.size()){
-        cout << 0 << "\n";
-        return;
-    }
-    else{
-        cout << m.size() - changes << "\n";
-        for(auto i: m){
-            if(i.second.first != -1)
-            cout << i.first << " " << i.second.second << "\n";
-        }
-    }
-}
- 
+#define mod 1000000007
 int main(){
- 
-    #ifndef ONLINE_JUDGE
-    freopen("/ATOMCODES/input.txt", "r", stdin);
-    freopen("/ATOMCODES/output.txt", "w", stdout);
-    #endif
- 
-    ios_base::sync_with_stdio(false);
-    cin.tie(NULL);
- 
-    solve();
+   ios_base::sync_with_stdio(false);
+   cin.tie(NULL);
+   #ifndef ONLINE_JUDGE
+      freopen("/ATOM/input.txt", "r", stdin);
+      freopen("/ATOM/output.txt", "w", stdout);
+   #endif
+   int n;
+   int c=0;
+   cin>>n;
+   map<int,int> cd;
+   map<int,int> index;
+   for(int i=1;i<=n;i++){
+      int k;
+      cin>>k;
+      if(cd[k]!=-1){
+         if(cd[k]==0){
+            if(index[k]==0){
+               cd[k]=0;
+               index[k]=i;
+            }
+            else{
+               cd[k]=i-index[k];
+               index[k]=i;
+            }
+         }else{
+            if(cd[k]!=i-index[k]){
+               cd[k]=-1;
+               c++;
+            }
+            else{
+               cd[k]=i-index[k];
+               index[k]=i;
+            }
+         }
+      }
+   }
+   cout<<cd.size()-c<<"\n";   
+   for(auto i : cd){
+      if(i.second!=-1){
+         cout<<i.first<<" "<<i.second<<"\n";
+      }
+   }
+
 }
