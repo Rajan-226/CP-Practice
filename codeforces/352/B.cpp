@@ -9,23 +9,21 @@ int main(){
       freopen("/ATOM/input.txt", "r", stdin);
       freopen("/ATOM/output.txt", "w", stdout);
    #endif
-   int n,c=0;
+   int n;
+   int c=0;
    cin>>n;
    map<int,int> cd;
    map<int,int> index;
    for(int i=1;i<=n;i++){
       int k;
       cin>>k;
-      if(cd[k]!=-1){
+      if(cd.find(k)==cd.end()&&cd[k]!=-1){
+         cd[k]=0;
+         index[k]=i;
+      }else if(cd[k]!=-1){
          if(cd[k]==0){
-            if(index[k]==0){
-               cd[k]=0;
-               index[k]=i;
-            }
-            else{
-               cd[k]=i-index[k];
-               index[k]=i;
-            }
+            cd[k]=i-index[k];
+            index[k]=i;
          }else{
             if(cd[k]!=i-index[k]){
                cd[k]=-1;
