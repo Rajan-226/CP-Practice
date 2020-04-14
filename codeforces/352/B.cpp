@@ -9,8 +9,7 @@ int main(){
       freopen("/ATOM/input.txt", "r", stdin);
       freopen("/ATOM/output.txt", "w", stdout);
    #endif
-   int n;
-   int c=0;
+   int n,c=0;
    cin>>n;
    map<int,int> cd;
    map<int,int> index;
