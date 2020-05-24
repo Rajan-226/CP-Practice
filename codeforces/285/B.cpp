@@ -11,7 +11,7 @@ void fun(){
     int a[n+1];
     for(int i=1;i<=n;i++)
         cin>>a[i];
-    int ans=0,i=s;
+    int ans=0,i=s,last=-1;
     while(1){
         if(s==t){
             cout<<ans;
@@ -19,10 +19,11 @@ void fun(){
         }
         ans++;
         s=a[s];
-        if(s==i){
+        if(s==i||s==last){
             cout<<"-1\n";
             break;
         }
+        last=s;
     }
 }
 /*
