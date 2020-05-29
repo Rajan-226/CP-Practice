@@ -9,7 +9,7 @@ using namespace std;
 #define UM unordered_map<int,int>
 #define ULL unordered_map<ll,int>
 void fun(){
-    int n,m,k;
+    int n,m,k,c=0;
     cin>>n>>m>>k;
     n=n/k;
     if(m<=n){
@@ -18,7 +18,11 @@ void fun(){
     }
     m-=n;
     k--;
-    cout<<n-ceil((double)m/k)<<"\n";
+    while(m>0){
+        c++;
+        m-=k;
+    }
+    cout<<n-c<<"\n";
 }
 int main(){
     ios_base::sync_with_stdio(false);
