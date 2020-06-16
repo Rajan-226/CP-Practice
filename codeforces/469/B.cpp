@@ -20,8 +20,10 @@ bool check(int c){
 		x+=c;	y+=c;
 		fj(0,p){
 			ll a=pp[j].F,b=pp[j].S;
-			if(x<=b&&y>=a)
-				return 1;
+			fk(x,y+1){
+				if(k>=a&&k<=b)
+					return 1;
+			}
 		}
 	}
 	return 0;
