@@ -244,6 +244,25 @@
     ],
     "timestamp": "Dec/21/2020 16:00"
   },
+  "CF84146457": {
+    "contest_id": 1156,
+    "language": "GNU C++14",
+    "path": "codeforces\\1156\\C.cpp",
+    "problem_index": "C",
+    "problem_name": "Match Points",
+    "problem_url": "https://codeforces.com/contest/1156/problem/C",
+    "submission_id": "CF84146457",
+    "submission_url": "https://codeforces.com/contest/1156/submission/84146457",
+    "tags": [
+      "binary search",
+      "greedy",
+      "sortings",
+      "ternary search",
+      "two pointers",
+      "*2000"
+    ],
+    "timestamp": "Jun/18/2020 15:38"
+  },
   "CF84312752": {
     "contest_id": 509,
     "language": "GNU C++14",
