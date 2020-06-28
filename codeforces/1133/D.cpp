@@ -11,26 +11,24 @@ using namespace std;
 #define F first
 #define S second
 #define pb push_back
-#define UM unordered_map<long double,ll>
+#define UM map<long double,ll>
 void fun(){
 	int n;
 	cin>>n;
+	UM mp;
 	ll a[n];
 	fi(0,n)	cin>>a[i];
-	int ans=0,c=0;
-	map<pair<int,int>,int> mp;
+	ll ans=0,c=0;
+	long double k;
 	fi(0,n){
-		ll k;
 		cin>>k;
 		if(a[i]==0&&k==0){
 			c++;
 		}
 		else if(a[i]){
-			//k,a[i]
-			ll g=__gcd(a[i],k);
-			k/=g;	a[i]/=g;
-			mp[{k,a[i]}]+=1;
-			ans=max(ans,mp[{k,a[i]}]);
+			long double db=k/a[i];
+			mp[db]+=1;
+			ans=max(ans,mp[db]);
 		}
 	}
 	cout<<ans+c<<"\n";
