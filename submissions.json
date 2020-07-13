@@ -244,6 +244,18 @@
     ],
     "timestamp": "Dec/21/2020 16:00"
   },
+  "CF86760001": {
+    "contest_id": 393,
+    "language": "GNU C++14",
+    "path": "codeforces\\393\\A.cpp",
+    "problem_index": "A",
+    "problem_name": "Nineteen",
+    "problem_url": "https://codeforces.com/contest/393/problem/A",
+    "submission_id": "CF86760001",
+    "submission_url": "https://codeforces.com/contest/393/submission/86760001",
+    "tags": [],
+    "timestamp": "Jul/13/2020 20:44"
+  },
   "CF86834379": {
     "contest_id": 1118,
     "language": "GNU C++14",
