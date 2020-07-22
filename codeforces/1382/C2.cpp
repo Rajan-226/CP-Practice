@@ -22,7 +22,7 @@ void fun(){
     string a,b;
     cin>>a>>b;
     vector<int> ans;
-    int firstbit=0,ok=0,k=1,kk=n-1;
+    int firstbit=0,ok=0;
     for(int i=n-1;i>=0;i--){
         if(ok){
             if(i==0){
@@ -37,8 +37,7 @@ void fun(){
                 ans.push_back(1);
                 ans.push_back(i+1);
             }
-            firstbit=k;
-            k++;
+            firstbit-=i;
             ok=0;
         }
         else{
@@ -54,8 +53,7 @@ void fun(){
                 ans.push_back(i+1);
             }
             ok=1;
-            firstbit=kk;
-            kk--;
+            firstbit+=i;
         }
     }
     cout<<ans.size()<<" ";
