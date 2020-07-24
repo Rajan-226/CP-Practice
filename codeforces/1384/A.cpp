@@ -16,23 +16,34 @@ void yn(bool check){
     if(check)	cout<<"YES\n";
     else		cout<<"NO\n";
 }
+string change(string str, string l, int len) {
+    fi(0,len+1)
+        str[i]=l[i];
+
+    if(str[len] == 'z') str[len] = 'd';
+    else str[len]++;
+
+    return str;
+}
 void fun(){
     int n;
     cin>>n;
-    string ans;
+    string s;
     fi(0,200)
-        ans+='a';
-    cout<<ans<<"\n";
-    int temp=0;
-    fi(0,n){
-        int k;
-        cin>>k;
-        if(ans[k]=='z')
-            ans[k]='b';
-        else
-            ans[k]+=1;
-        cout<<ans<<"\n";
+        s+='a';
+    int temp;
+    cin>>temp;
+    cout<<s<<"\n";
+    string x=s;
+    x=change(x,s,temp);
+    cout<<x<<"\n";
+    fi(1,n){
+        cin>>temp;
+        s=change(s,x,temp);
+        cout<<s<<"\n";
+        x=s;
     }
+
 }
 int main(){
     ios_base::sync_with_stdio(false);
