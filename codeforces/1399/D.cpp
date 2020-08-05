@@ -15,47 +15,53 @@ using namespace std;
 #define MP map<int,int>
 #define mxsize (int)1e6
 void fun(){
-    int n;
-    cin>>n;
-    string s;
-    cin>>s;
-    n=s.size();
-    deque<int> on,zr;
-    vector<int> ans(n);
-    int col=1;
-    ans[0]=1;
-    if(s[0]=='0'){
-        zr.push_back(1);
-    }
-    else{
-        on.push_back(1);
-    }
-    fi(1,n){
-        if(s[i]=='0'){
-            if(on.empty()){
-                zr.push_back(++col);
-                ans[i]=col;
+    int n; cin >> n;
+    string s; cin >> s;
+
+    int a[n];
+
+    priority_queue<int> m1, m2;
+
+    a[0] = 1;
+    int count = 1;
+
+    if(s[0] == '1') {
+        m2.push(count++);
+    }else m1.push(count++);
+
+
+    int _max = 0;
+
+    fi(1, n) {
+        if(s[i] == '1') {
+            if(m1.empty()) {
+                a[i] = count;
+                m2.push(count);
+                count++;
+            }else {
+                a[i] = m1.top();
+                int x = m1.top();    
+                m1.pop();
+                m2.push(x);
             }
-            else{
-                ans[i]=on.back();
-                zr.push_back(ans[i]);
-                on.pop_back();
+        }else {
+
+            if(m2.empty()) {
+                a[i] = count;
+                m1.push(count);  
+                count++;
+            }else {
+                a[i] = m2.top();
+                int x = m2.top();
+                m2.pop();
+                m1.push(x);
             }
         }
-        else{
-            if(zr.empty()){
-                on.push_back(++col);
-                ans[i]=col;
-            }
-            else{
-                ans[i]=zr.back();
-                on.push_back(ans[i]);
-                zr.pop_back();
-            }
-        }
     }
-    cout<<col<<"\n";
-    fi(0,n) db(ans[i]);
+    cout << count-1 << '\n';
+    fi(0, n) {
+        cout << a[i] << ' ';
+    }
     nl;
 
 }
