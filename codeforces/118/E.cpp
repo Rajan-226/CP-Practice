@@ -40,8 +40,8 @@ void dfs(int node,int p){
             }
         }
         else{       //Back edge
-            if(v.find({child,node})==v.end())    // for removing 2-4,where 2 is ancestor and 4-2 as a backedge is already inserted
-                v.insert({node,child});
+            if(v.find({-1*child,node})==v.end())
+            v.insert({-1*node,child});
             low[node]=min(in[child],low[node]);
         }
     }
@@ -58,7 +58,13 @@ void fun(){
     }
     dfs(1,-1);
     for(auto i:v){
-        db(i.F);db(i.S);nl;
+        if(i.F<0){
+            db(-1*i.F);db(i.S);nl;
+        }
+        else{
+            db(i.F);db(i.S);nl;
+        }
+        
     }
 }
 int main(){
