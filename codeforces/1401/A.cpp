@@ -22,15 +22,10 @@ void fun(){
         ans=k-n;
     }
     else{
-        if(k==0){
-            ans=n%2;
-        }
-        else{
-            if((n%2==0&&k%2==0)||(n%2!=0)&&k%2!=0)
-                ans=0;
-            else
-                ans=1;
-        }
+        if((n%2==0&&k%2==0)||(n%2!=0)&&k%2!=0)
+            ans=0;
+        else
+            ans=1;
     }
 
     cout<<ans<<"\n";
