@@ -244,6 +244,22 @@
     ],
     "timestamp": "Dec/21/2020 16:00"
   },
+  "CF91114616": {
+    "contest_id": 515,
+    "language": "GNU C++14",
+    "path": "codeforces\\515\\D.cpp",
+    "problem_index": "D",
+    "problem_name": "Drazil and Tiles",
+    "problem_url": "https://codeforces.com/contest/515/problem/D",
+    "submission_id": "CF91114616",
+    "submission_url": "https://codeforces.com/contest/515/submission/91114616",
+    "tags": [
+      "constructive algorithms",
+      "greedy",
+      "*2000"
+    ],
+    "timestamp": "Aug/27/2020 13:32"
+  },
   "CF91277172": {
     "contest_id": 518,
     "language": "GNU C++14",
