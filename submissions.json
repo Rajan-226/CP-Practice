@@ -244,6 +244,23 @@
     ],
     "timestamp": "Dec/21/2020 16:00"
   },
+  "CF91704472": {
+    "contest_id": 519,
+    "language": "GNU C++14",
+    "path": "codeforces\\519\\D.cpp",
+    "problem_index": "D",
+    "problem_name": "A and B and Interesting Substrings",
+    "problem_url": "https://codeforces.com/contest/519/problem/D",
+    "submission_id": "CF91704472",
+    "submission_url": "https://codeforces.com/contest/519/submission/91704472",
+    "tags": [
+      "data structures",
+      "dp",
+      "two pointers",
+      "*1800"
+    ],
+    "timestamp": "Sep/03/2020 15:02"
+  },
   "CF91802146": {
     "contest_id": 1409,
     "language": "GNU C++14",
