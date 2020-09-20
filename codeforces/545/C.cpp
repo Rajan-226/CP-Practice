@@ -26,34 +26,43 @@ ll fastexp(ll a,ll n,ll nod){
 void fun(){
     int n;
     cin>>n;
-    int x[n],h[n];
-    int stay[n],left[n],right[n];
+    int ans=0;
+    vector<pair<int,int>> v;
+    set<int> s;
     fi(0,n){
-        cin>>x[i]>>h[i];
-        stay[i]=left[i]=right[i]=0;
+        int x,y;
+        cin>>x>>y;
+        v.push_back({x,y});
+        s.insert(x);
     }
-    if(n==1){
-        cout<<"1\n";
-        return;
-    }
-    stay[0]=0;
-    left[0]=1;
-    right[0]=((x[0]+h[0])<x[1]);
 
-    fi(1,n){
-        // db(stay[i-1]);db(left[i-1]);db(right[i-1]);nl;
+    fi(0,n){
+        int x=v[i].F,h=v[i].S;
+        s.erase(x);
+        auto ind=s.lower_bound(x-h);
+        // for(auto i:s)   db(i);
+        auto ind2=s.lower_bound(x);
 
-        stay[i]=max(stay[i-1],max(left[i-1],right[i-1]));
-        left[i]=max(max(stay[i-1],left[i-1])+((x[i]-h[i])>x[i-1]),right[i-1]+((x[i]-h[i])>(x[i-1]+h[i-1])));
-        if(i==n-1){
-            right[i]=stay[i]+1;
+        // db(*ind);
+        // db(*ind2);      
+
+        if(*ind>x||*ind<x-h){
+            s.insert(x-h);
+            // db("left");db(x-h);
+            ans++;
         }
-        else
-            right[i]=stay[i]+((x[i]+h[i])<(x[i+1]));
+        else if(ind2==s.end()||*ind2<x||*ind2>x+h){
+            s.insert(x+h);
+            // db("right");db(x+h);
+            ans++;
+        }
+        s.insert(x);
+        // nl;
+        //  for(auto i:s)   db(i);nl;
+        // nl;
     }
-
-    cout<<max(stay[n-1],max(left[n-1],right[n-1]));
-
+    
+    cout<<ans<<"\n";
 }
 int main(){
     ios_base::sync_with_stdio(false);
