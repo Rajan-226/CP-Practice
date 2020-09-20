@@ -27,30 +27,32 @@ void fun(){
     int n;
     cin>>n;
     int x[n],h[n];
-    int left[n],right[n];
+    int stay[n],left[n],right[n];
     fi(0,n){
         cin>>x[i]>>h[i];
-        left[i]=right[i]=0;
+        stay[i]=left[i]=right[i]=0;
     }
     if(n==1){
         cout<<"1\n";
         return;
     }
+    stay[0]=0;
     left[0]=1;
     right[0]=((x[0]+h[0])<x[1]);
 
     fi(1,n){
-        // db(left[i-1]);db(right[i-1]);nl;
+        // db(stay[i-1]);db(left[i-1]);db(right[i-1]);nl;
 
-        left[i]=max(left[i-1]+((x[i]-h[i])>x[i-1]),right[i-1]+((x[i]-h[i])>(x[i-1]+h[i-1])));
-
-        if(i==n-1)
-            right[i]=max(left[i-1],right[i-1])+1;
+        stay[i]=max(stay[i-1],max(left[i-1],right[i-1]));
+        left[i]=max(max(stay[i-1],left[i-1])+((x[i]-h[i])>x[i-1]),right[i-1]+((x[i]-h[i])>(x[i-1]+h[i-1])));
+        if(i==n-1){
+            right[i]=stay[i]+1;
+        }
         else
-            right[i]=max(left[i-1],right[i-1])+((x[i]+h[i])<(x[i+1]));
+            right[i]=stay[i]+((x[i]+h[i])<(x[i+1]));
     }
 
-    cout<<max(left[n-1],right[n-1]);
+    cout<<max(stay[n-1],max(left[n-1],right[n-1]));
 
 }
 int main(){
