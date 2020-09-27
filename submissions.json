@@ -244,6 +244,21 @@
     ],
     "timestamp": "Dec/21/2020 16:00"
   },
+  "CF93947438": {
+    "contest_id": 556,
+    "language": "GNU C++17",
+    "path": "codeforces\\556\\C.cpp",
+    "problem_index": "C",
+    "problem_name": "Case of Matryoshkas",
+    "problem_url": "https://codeforces.com/contest/556/problem/C",
+    "submission_id": "CF93947438",
+    "submission_url": "https://codeforces.com/contest/556/submission/93947438",
+    "tags": [
+      "implementation",
+      "*1500"
+    ],
+    "timestamp": "Sep/27/2020 16:07"
+  },
   "CF94061789": {
     "contest_id": 1426,
     "language": "GNU C++17",
