@@ -23,20 +23,18 @@ ll fastexp(ll a,ll n,ll nod=LLONG_MAX){
 }
 ll ans=0;
 void add(ll n){
-	// ll temp=1;
-	// while(n--){
-	// 	ans+=temp;
-	// 	temp+=2;
-	// }
-	ans+=n*n;		//sum of first n odd numbers is n^2
+	ll temp=1;
+	while(n--){
+		ans+=temp;
+		temp+=2;
+	}
 }
 void remove(ll n){
-	// ll temp=1;
-	// while(n--){
-	// 	ans-=temp;
-	// 	temp+=2;
-	// }
-	ans-=n*n;	//sum of first n odd numbers is n^2
+	ll temp=1;
+	while(n--){
+		ans-=temp;
+		temp+=2;
+	}
 }
 void fun(){
 	int a[6];
