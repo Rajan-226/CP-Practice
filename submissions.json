@@ -244,6 +244,21 @@
     ],
     "timestamp": "Dec/21/2020 16:00"
   },
+  "CF98569212": {
+    "contest_id": 592,
+    "language": "GNU C++17",
+    "path": "codeforces\\592\\A.cpp",
+    "problem_index": "A",
+    "problem_name": "PawnChess",
+    "problem_url": "https://codeforces.com/contest/592/problem/A",
+    "submission_id": "CF98569212",
+    "submission_url": "https://codeforces.com/contest/592/submission/98569212",
+    "tags": [
+      "implementation",
+      "*1200"
+    ],
+    "timestamp": "Nov/16/2020 19:10"
+  },
   "CF98570265": {
     "contest_id": 592,
     "language": "GNU C++17",
