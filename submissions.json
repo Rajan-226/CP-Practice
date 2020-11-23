@@ -244,6 +244,22 @@
     ],
     "timestamp": "Dec/21/2020 16:00"
   },
+  "CF99294247": {
+    "contest_id": 591,
+    "language": "GNU C++17",
+    "path": "codeforces\\591\\C.cpp",
+    "problem_index": "C",
+    "problem_name": "Median Smoothing",
+    "problem_url": "https://codeforces.com/contest/591/problem/C",
+    "submission_id": "CF99294247",
+    "submission_url": "https://codeforces.com/contest/591/submission/99294247",
+    "tags": [
+      "constructive algorithms",
+      "implementation",
+      "*1700"
+    ],
+    "timestamp": "Nov/23/2020 11:30"
+  },
   "CF99366252": {
     "contest_id": 593,
     "language": "GNU C++17",
