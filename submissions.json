@@ -244,6 +244,21 @@
     ],
     "timestamp": "Dec/21/2020 16:00"
   },
+  "CF102031474": {
+    "contest_id": 19,
+    "language": "GNU C++17",
+    "path": "codeforces\\19\\B.cpp",
+    "problem_index": "B",
+    "problem_name": "Checkout Assistant",
+    "problem_url": "https://codeforces.com/contest/19/problem/B",
+    "submission_id": "CF102031474",
+    "submission_url": "https://codeforces.com/contest/19/submission/102031474",
+    "tags": [
+      "dp",
+      "*1900"
+    ],
+    "timestamp": "Dec/22/2020 15:51"
+  },
   "CF73399713": {
     "contest_id": 677,
     "language": "GNU C11",
