@@ -259,6 +259,23 @@
     ],
     "timestamp": "Dec/22/2020 15:51"
   },
+  "CF102482692": {
+    "contest_id": 1303,
+    "language": "GNU C++17",
+    "path": "codeforces\\1303\\C.cpp",
+    "problem_index": "C",
+    "problem_name": "Perfect Keyboard",
+    "problem_url": "https://codeforces.com/contest/1303/problem/C",
+    "submission_id": "CF102482692",
+    "submission_url": "https://codeforces.com/contest/1303/submission/102482692",
+    "tags": [
+      "dfs and similar",
+      "greedy",
+      "implementation",
+      "*1600"
+    ],
+    "timestamp": "Dec/27/2020 21:18"
+  },
   "CF102558902": {
     "contest_id": 1469,
     "language": "GNU C++17",
