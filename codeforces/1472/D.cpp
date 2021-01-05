@@ -24,8 +24,7 @@ ll fastexp(ll a,ll n,ll nod=LLONG_MAX){
     return ans;
 }
 #define mxsize (int)3e5
-//First of all, F to the ratings for now
-// Just compare this submission with very first submission of mine (103250896)
+
 void fun(){
     int n;
     cin>>n;
@@ -52,7 +51,7 @@ void fun(){
             ok=0;
         }else{
             if(od[o]>=ev[e]){
-                bob+=od[o--];       // F here
+                bob+=od[o--];
             }else{
                 e--;
             }
@@ -60,13 +59,13 @@ void fun(){
         }
     }
     while(e>=0){
-        if(ok)  alice+=ev[e--];     //F here
+        if(ok)  alice+=ev[e--];
         else e--;
         ok^=1;
     }
     while(o>=0){
         if(!ok){
-            bob+=od[o--];       //And last F here
+            bob+=od[o--];
         }else{
             o--;
         }
@@ -79,12 +78,7 @@ void fun(){
     }else{
         cout<<"Bob\n";
     }
-    //Total 3F's 
 }
-// even first
-// 2 4 1 2
-
-
 int main(){
     ios_base::sync_with_stdio(false);
     cin.tie(NULL);
