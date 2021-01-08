@@ -259,6 +259,21 @@
     ],
     "timestamp": "Dec/22/2020 15:51"
   },
+  "CF103695002": {
+    "contest_id": 602,
+    "language": "GNU C++17",
+    "path": "codeforces\\602\\C.cpp",
+    "problem_index": "C",
+    "problem_name": "The Two Routes",
+    "problem_url": "https://codeforces.com/contest/602/problem/C",
+    "submission_id": "CF103695002",
+    "submission_url": "https://codeforces.com/contest/602/submission/103695002",
+    "tags": [
+      "graphs",
+      "*1600"
+    ],
+    "timestamp": "Jan/08/2021 13:34"
+  },
   "CF103724697": {
     "contest_id": 363,
     "language": "GNU C++17",
