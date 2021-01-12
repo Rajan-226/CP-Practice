@@ -29,20 +29,19 @@ struct node{
     int mst;
     int index;
 };
-bool comp(node &A,node &B){
-    if(A.w!=B.w)    return A.w<B.w;
-    return A.mst>B.mst;
-}
+
 void fun(){
     int n,m;
     cin>>n>>m;
-    vector<node> v(m);
-    vector<pair<int,int>> ans(m);
+    node v[m];
+    pair<int,int> ans[m];
     fi(0,m){
         cin>>v[i].w>>v[i].mst;
         v[i].index=i;
     }
-    sort(v.begin(),v.end(),comp);
+    sort(v,v+m,[](node &A,node &B){
+        return A.w<B.w||(A.w==B.w&&A.mst>B.mst);        //O bhai msttt ek dum kadak
+    });
     int curnode=1;
     int maker=3,makel=1;
     fi(0,m){

@@ -259,6 +259,21 @@
     ],
     "timestamp": "Dec/22/2020 15:51"
   },
+  "CF104098036": {
+    "contest_id": 606,
+    "language": "GNU C++17",
+    "path": "codeforces\\606\\D.cpp",
+    "problem_index": "D",
+    "problem_name": "Lazy Student",
+    "problem_url": "https://codeforces.com/contest/606/problem/D",
+    "submission_id": "CF104098036",
+    "submission_url": "https://codeforces.com/contest/606/submission/104098036",
+    "tags": [
+      "graphs",
+      "*1700"
+    ],
+    "timestamp": "Jan/12/2021 14:47"
+  },
   "CF104098180": {
     "contest_id": 606,
     "language": "GNU C++17",
