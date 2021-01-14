@@ -259,6 +259,21 @@
     ],
     "timestamp": "Dec/22/2020 15:51"
   },
+  "CF104249937": {
+    "contest_id": 610,
+    "language": "GNU C++17",
+    "path": "codeforces\\610\\C.cpp",
+    "problem_index": "C",
+    "problem_name": "Harmony Analysis",
+    "problem_url": "https://codeforces.com/contest/610/problem/C",
+    "submission_id": "CF104249937",
+    "submission_url": "https://codeforces.com/contest/610/submission/104249937",
+    "tags": [
+      "constructive algorithms",
+      "*1800"
+    ],
+    "timestamp": "Jan/14/2021 12:56"
+  },
   "CF104254071": {
     "contest_id": 1350,
     "language": "GNU C++17",
